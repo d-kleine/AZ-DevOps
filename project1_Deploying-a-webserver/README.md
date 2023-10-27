@@ -11,7 +11,7 @@ Although we’d like to use Azure App Service, management has told us that the c
 
 To support this need and minimize future work, we will use Packer to create a server image, and Terraform to create a template for deploying a scalable cluster of servers—with a load balancer to manage the incoming traffic. We’ll also need to adhere to security practices and ensure that our infrastructure is secure.
 
-![Project overview](images\project-videos.png)
+![Project overview](images/project-videos.png)
 
 ## Main steps
 The project will consist of the following main steps:
@@ -67,9 +67,9 @@ Verify the creation of the policy:
 az policy assignment list
 ```
 
-![Policy definition](images\policy\defition.png)
-![Policy final schema](images\policy\json_scheme.png)
-![Policy overview](images\policy\assignment.png)
+![Policy definition](images/policy/defition.png)
+![Policy final schema](images/policy/json_scheme.png)
+![Policy overview](images/policy/assignment.png)
 
 ### 2. Packer image template
 To support application delivery, we need to create an image that different organizations can use to deploy their own apps. To do this, we create a packer image that anyone can use and use it in our own Terraform template.
@@ -96,10 +96,10 @@ packer build server.json
 az image list
 ```
 
-![Upload server.json](images\packer\upload_file.png)
-![Building image](images\packer\build_image.png)
-![Finished build](images\packer\build_finished.png)
-![Images list](images\packer\image_list.png)
+![Upload server.json](images/packer/upload_file.png)
+![Building image](images/packer/build_image.png)
+![Finished build](images/packer/build_finished.png)
+![Images list](images/packer/image_list.png)
 
 ### 3. Terraform template
 
@@ -160,13 +160,13 @@ We should also double-check that all affected infrastructure resources have been
 terraform show
 ```
 
-![Terraform init](images\terraform\init.png)
-![Terraform plan](images\terraform\plan.png)
-![Terraform plan -out ](images\terraform\out.png)
-![Terraform apply](images\terraform\apply.png)
-![Terraform apply completed](images\terraform\apply_complete.png)
-![Terraform Azure resources](images\terraform\infrastructure_resources.png)
-![Terraform destroy](images\terraform\destroy.png)
+![Terraform init](images/terraform/init.png)
+![Terraform plan](images/terraform/plan.png)
+![Terraform plan -out ](images/terraform/out.png)
+![Terraform apply](images/terraform/apply.png)
+![Terraform apply completed](images/terraform/apply_complete.png)
+![Terraform Azure resources](images/terraform/infrastructure_resources.png)
+![Terraform destroy](images/terraform/destroy.png)
 
 ## Output
 The Terraform template deploys a virtual network, network security groups, network interfaces, a public IP, a load balancer, availability sets, virtual machines, and managed disks in Azure.
