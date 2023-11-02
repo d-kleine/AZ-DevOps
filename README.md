@@ -12,7 +12,7 @@ The program is divided into three main sections, each focusing on specific aspec
 - Introduction to DevOps & Infrastructure
 - Azure Infrastructure Fundamentals
 - Azure Security Best Practices
-- Infrastructure as Code
+- Infrastructure as Code (IaC)
 
 &rarr; Deploying a Web Server in Azure (Project)
 
@@ -45,7 +45,7 @@ Throughout this program, you will acquire a wide range of skills in the field of
 - Azure active directory
 - Azure security center
 - Network security with Azure
-- Virtual machine management
+- Virtual Machine management
 - Packer
 - Azure CLI
 - Terraform
@@ -55,15 +55,14 @@ Throughout this program, you will acquire a wide range of skills in the field of
 - Continuous improvement
 - Build automation
 - Agile methodologies
-- Continuous integration
-- Continuous deployment
-- Azure pipelines
+- Continuous Integration (CI) & Continuous Deployment (CD)
+- Azure Pipelines
 - Technical communication
-- Gitops
+- GitOps
 - Root cause analysis
 - GitHub actions
-- Pylint
-- Azure app service
+- Pylint & Pytest
+- Azure App Service
 
 ### Ensuring Quality Releases (Quality Assurance)
 - Software performance testing
@@ -74,7 +73,6 @@ Throughout this program, you will acquire a wide range of skills in the field of
 - Selenium
 - Integration testing
 - Data validation
-- CI/CD
 - Apache JMeter
 - Postman
 - Test automation
