@@ -13,14 +13,16 @@ The program is divided into three main sections, each focusing on specific aspec
 - Azure Infrastructure Fundamentals
 - Azure Security Best Practices
 - Infrastructure as Code
-- Deploying a Web Server in Azure (Project)
+
+&rarr; Deploying a Web Server in Azure (Project)
 
 ### 2. Agile Development with Azure
 - Introduction to Agile Development with Azure
 - Agile Planning and Communication
 - Continuous Integration
 - Continuous Delivery
-- Building a CI/CD Pipeline (Project)
+
+&rarr; Building a CI/CD Pipeline (Project)
 
 ### 3. Ensuring Quality Releases (Quality Assurance)
 - Intro to Ensuring Quality Releases
@@ -29,7 +31,8 @@ The program is divided into three main sections, each focusing on specific aspec
 - Functional UI Testing with Selenium
 - Integration Testing with Postman
 - Azure Observability
-- Ensuring Quality Releases Project
+
+&rarr; Ensuring Quality Releases (Project)
 
 ## Key Skills
 
