@@ -14,7 +14,7 @@ The program is divided into three main sections, each focusing on specific aspec
 - Azure Security Best Practices
 - Infrastructure as Code (IaC)
 
-&rarr; Deploying a Web Server in Azure (Project)
+&rarr; [Project: Deploying a Web Server in Azure](https://github.com/d-kleine/AZ-DevOps/tree/main/project1_Deploying-a-webserver)
 
 ### 2. Agile Development with Azure
 - Introduction to Agile Development with Azure
@@ -22,7 +22,7 @@ The program is divided into three main sections, each focusing on specific aspec
 - Continuous Integration
 - Continuous Delivery
 
-&rarr; Building a CI/CD Pipeline (Project)
+&rarr; [Project: Building a CI/CD Pipeline](https://github.com/d-kleine/AZ-DevOps/tree/main/project2_Building_a_CICD_Pipeline)
 
 ### 3. Ensuring Quality Releases (Quality Assurance)
 - Intro to Ensuring Quality Releases
@@ -32,7 +32,7 @@ The program is divided into three main sections, each focusing on specific aspec
 - Integration Testing with Postman
 - Azure Observability
 
-&rarr; Ensuring Quality Releases (Project)
+&rarr; [Project: Ensuring Quality Releases](https://github.com/d-kleine/AZ-DevOps/tree/main/project3_Ensuring_quality_releases)
 
 ## Key Skills
 
