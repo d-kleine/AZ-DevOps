@@ -1,5 +1,4 @@
 **/*.tfstate
-**/*.json
 **/*.exe
 # Local .terraform directories
 **/.terraform/*
@@ -23,3 +22,7 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
