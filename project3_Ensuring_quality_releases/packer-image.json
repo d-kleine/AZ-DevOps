@@ -1,0 +1,52 @@
+{
+    "variables": {
+        "subscription_id": "481b1dfa-09f6-4305-a978-b656e03d8e84",
+        "tenant_id": "f958e84a-92b8-439f-a62d-4f45996b6d07",
+        "client_id": "d2dd769d-b199-45f8-b733-d9a218d1fbd3",
+        "client_secret": "5JO8Q~iOJjNrbQxGLjX2XFaJt_g35Eds.gzh3bl2",   
+        "resource_group_name": "Azuredevops",
+        "image_name": "packer-image",
+        "vm_size": "Standard_B1s"
+    },
+    "builders": [
+        {
+            "type": "azure-arm",
+            "client_id": "{{user `client_id`}}",
+            "client_secret": "{{user `client_secret`}}",
+            "tenant_id": "{{user `tenant_id`}}",
+            "subscription_id": "{{user `subscription_id`}}",
+            "managed_image_resource_group_name": "{{user `resource_group_name`}}",
+            "build_resource_group_name": "{{user `resource_group_name`}}",
+            "managed_image_name": "{{user `image_name`}}",
+            "os_type": "Linux",
+            "image_publisher": "Canonical",
+            "image_offer": "UbuntuServer",
+            "image_sku": "18.04-LTS",
+            "vm_size": "{{user `vm_size`}}"
+        }
+    ],
+    "provisioners": [
+        {
+            "inline": [
+                "apt-get update",
+                "apt-get upgrade -y",
+                "apt-get install -y npm",
+                "npm cache clean -f",
+                "npm install -g n",
+                "n stable",
+                "npm install -g newman",
+                "apt-get install -y python3-pip",
+                "apt-get install -y unzip",
+                "apt-get install -y chromium-browser",
+                "apt-get install chromium-chromedriver",
+                "apt-get install python3-selenium",
+                "apt-get install -y python3-venv",
+                "python3 -m venv env",
+                "pip3 install selenium"
+            ],
+            "inline_shebang": "/bin/sh -x",
+            "type": "shell",
+            "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'"
+        }
+    ]
+}

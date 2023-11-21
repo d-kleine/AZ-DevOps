@@ -1,11 +1,13 @@
-# #!/usr/bin/env python
+#!/usr/bin/env python
+
 from login import login
-from selenium.webdriver.common.by import By
+from login import print_with_timestamp
+from login import By
 from selenium.common.exceptions import NoSuchElementException
 
 
 def add_items(driver):
-    print("Start test adding items to cart...")
+    print_with_timestamp("Start test adding items to cart...")
 
     # Get all the items in the inventory list
     items = driver.find_elements(By.CSS_SELECTOR, '.inventory_item')
@@ -23,7 +25,7 @@ def add_items(driver):
         added_items.append(item_name)
 
     # Print the list of added items
-    print("Items '{}' added.".format("', '".join(added_items)))
+    print_with_timestamp("Items '{}' added.".format("', '".join(added_items)))
 
     # Show the number of items in the cart
     # Find the shopping cart badge element
@@ -36,11 +38,12 @@ def add_items(driver):
     expected_count = len(added_items)
     actual_count = int(cart_items_count)
     assert expected_count == actual_count, f"Items count mismatch. Expected: {expected_count}, Actual: {actual_count}"
-    print("6 Items successfully added to cart! Proceeding with removing those items from the cart.")
+    print_with_timestamp(
+        "6 Items successfully added to cart! Proceeding with removing those items from the cart.")
 
 
 def remove_items(driver):
-    print("Start test removing items from the cart...")
+    print_with_timestamp("Start test removing items from the cart...")
 
     # Click on the shopping cart link
     cart_link = driver.find_element(By.CLASS_NAME, "shopping_cart_link")
@@ -61,7 +64,8 @@ def remove_items(driver):
         removed_items.append(item_name)
 
     # Print the list of removed items
-    print("Items '{}' removed.".format("', '".join(removed_items)))
+    print_with_timestamp("Items '{}' removed.".format(
+        "', '".join(removed_items)))
 
     try:
         # Check if the shopping cart badge still exists
@@ -72,11 +76,11 @@ def remove_items(driver):
 
     # Assert that the cart badge element is None (i.e., it should not exist)
     assert cart_badge is None, "Still existing items in the cart."
-    print("All items removed from cart successfully!")
+    print_with_timestamp("All items removed from cart successfully!")
 
 
 if __name__ == "__main__":
     driver = login('standard_user', 'secret_sauce')
     add_items(driver)
     remove_items(driver)
-    print("UI Tests completed successfully!")
+    print_with_timestamp("UI Tests completed successfully!")

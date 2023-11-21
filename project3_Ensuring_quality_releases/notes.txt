@@ -1,0 +1,7 @@
+https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks
+https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks
+https://marketplace.visualstudio.com/items?itemName=LakshayKaushik.PublishHTMLReports
+
+terraform import module.resource_group.azurerm_resource_group.test /subscriptions/{subscription-id}/resourceGroups/Azuredevops
+
+packer build packer-image.json
