@@ -32,7 +32,7 @@ The program is divided into three main sections, each focusing on specific aspec
 - Integration Testing with Postman
 - Azure Observability
 
-&rarr; [Project (WIP): Ensuring Quality Releases](https://github.com/d-kleine/AZ-DevOps/tree/main/project3_Ensuring_quality_releases)
+&rarr; [Project: Ensuring Quality Releases](https://github.com/d-kleine/AZ-DevOps/tree/main/project3_Ensuring_quality_releases)
 
 ## Key Skills
 
