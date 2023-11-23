@@ -18,7 +18,12 @@ These resources are orchestrated to deploy a demo REST API within the App Servic
 
 ### Tests
 
-The pipeline includes automated tests developed using Postman, JMeter, and Selenium. The Postman tests cover both regression and data validation scenarios, with results published to Azure Pipelines. The final pipeline, described in the *azure-pipelines.yaml* file, guides you through integrating these tests seamlessly.
+The pipeline includes automated tests developed using 
+* *Postman* for API testing (Integration Testing)
+* *JMeter* for Performance Testing
+* *Selenium* using Chromedriver for Functional UI Testing
+
+The final pipeline, described in the *azure-pipelines.yaml* file, guides you through integrating these tests seamlessly.
 
 ## Set up
 
@@ -232,7 +237,7 @@ When opening this URL after deployment, it will look like that:
 
 ### Automated testing
 
-#### Integrating testing with Postman
+#### Integration testing with Postman
 
 Screenshots of the Test Run Results from Postman shown in Azure DevOps:
 
