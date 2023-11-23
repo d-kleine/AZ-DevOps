@@ -19,7 +19,7 @@ These resources are orchestrated to deploy a demo REST API within the App Servic
 ### Tests
 
 The pipeline includes automated tests developed using 
-* *Postman* for API testing (Integration Testing)
+* *Postman* for API Testing (Integration Testing)
 * *JMeter* for Performance Testing
 * *Selenium* using Chromedriver for Functional UI Testing
 
