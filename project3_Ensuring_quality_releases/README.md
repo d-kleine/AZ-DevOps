@@ -41,7 +41,7 @@ The following are the dependencies of the project you will need:
   - [Chromedriver](https://chromedriver.chromium.org/)
   - [Chrome](https://www.google.com/intl/de_de/chrome/)
 
-In [Azure Devops](https://dev.azure.com), you also need to install this dependencies:
+In [Azure DevOps](https://dev.azure.com), you also need to install this dependencies:
 * [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
 * [Jmeter tasks](https://marketplace.visualstudio.com/items?itemName=AlexandreGattiker.jmeter-tasks)
 * [PublishHTMLReports](https://marketplace.visualstudio.com/items?itemName=LakshayKaushik.PublishHTMLReports)
