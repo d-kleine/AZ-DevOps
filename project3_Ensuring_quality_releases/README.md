@@ -232,19 +232,27 @@ When opening this URL after deployment, it will look like that:
 
 ### Automated testing
 
-#### Postman
+#### Integrating testing with Postman
 
 Screenshots of the Test Run Results from Postman shown in Azure DevOps:
-![Postman Data Validation Test](screenshots/postman-datavalid.png)
-![Postman Regressions Test](screenshots/postman-regression.png)
 
-#### JMeter
+* *Data Validation Test*: Ensures the integrity and accuracy of the data exchanged between the client and the server by verifying that the response received meets expected criteria 
+![Postman Data Validation Test](screenshots/postman-datavalid.png)
+
+* *Regression Test*: Verifies that recent code changes have not adversely affected existing API functionalities by systematically retesting a suite of previously validated requests and ensuring they still produce the expected responses.
+![Postman Regression Test](screenshots/postman-regression.png)
+
+#### Performance testing with JMeter
 
 Log outputs of JMeter when executed by the CI/CD pipeline:
+
+* *Stress Test*: Evaluates the system's robustness and performance under high loads by simulating a large number of concurrent users or heavy transaction volumes to identify potential bottlenecks and assess system stability.
 ![Jmeter Stress Test](screenshots/jmeter-stress.png)
+
+* *Endurance Test*: Measures the system's ability to sustain prolonged, continuous loads over an extended period, ensuring that performance remains stable and reliable under sustained usage conditions, helping to identify any gradual degradation or resource leaks.
 ![Jmeter Endurance Test](screenshots/jmeter-endurance.png)
 
-#### Selenium
+#### Funktional UI testing with Selenium
 
 The selenium test will be performed on a different web app (https://www.saucedemo.com/):
 ![Selenium Test](screenshots/selenium_test.png)
