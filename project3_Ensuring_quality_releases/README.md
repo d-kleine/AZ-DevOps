@@ -38,6 +38,7 @@ The following are the dependencies of the project you will need:
   - [Postman](https://www.postman.com/downloads/)
   - [Python](https://www.python.org/downloads/)
   - [Selenium](https://www.selenium.dev/)
+  - [Chromedriver](https://chromedriver.chromium.org/)
   - [Chrome](https://www.google.com/intl/de_de/chrome/)
 
 In [Azure Devops](https://dev.azure.com), you also need to install this dependencies:
