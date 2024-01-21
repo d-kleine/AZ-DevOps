@@ -37,5 +37,5 @@ The program is divided into three main sections, each focusing on specific aspec
 ## Key Skills
 
 * **Azure Infrastructure Operations**: Infrastructure as Code (IaC), Azure user management, Azure monitor, Azure active directory, Azure security center, Network security with Azure, Virtual Machine management, Packer, Azure CLI, Terraform, DevOps business context
-*  **Agile Development with Azure**: Continuous improvement, Build automation, Agile methodologies, Continuous Integration (CI) & Continuous Deployment (CD), Azure Pipelines, Technical communication, GitOps, Root cause analysis, GitHub actions, Pylint & Pytest, Azure App Service
-*  **Ensuring Quality Releases (Quality Assurance)**: Software performance testing, Functional testing, Test environments, Logging, Cloud observability, Selenium, Integration testing, Data validation, Apache JMeter, Postman, Test automation
+* **Agile Development with Azure**: Continuous improvement, Build automation, Agile methodologies, Continuous Integration (CI) & Continuous Deployment (CD), Azure Pipelines, Technical communication, GitOps, Root cause analysis, GitHub actions, Pylint & Pytest, Azure App Service
+* **Ensuring Quality Releases (Quality Assurance)**: Software performance testing, Functional testing, Test environments, Logging, Cloud observability, Selenium, Integration testing, Data validation, Apache JMeter, Postman, Test automation
